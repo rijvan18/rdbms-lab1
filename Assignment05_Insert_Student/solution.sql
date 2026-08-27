@@ -6,17 +6,9 @@
 
 -- 1003 Karthik
 
--- Display all records
+-- Display all recordsINSERT INTO Student (StudentID, StudentName, DOB, Gender, DepartmentID) VALUES
+(1001, 'Arun', '2002-05-14', 'Male', 101),
+(1002, 'Divya', '2001-11-20', 'Female', 102),
+(1003, 'Karthik', '2002-01-08', 'Male', 101);
 
-CREATE TABLE Student(
-studentID INT PRIMARY KEY,
-studentName VARCHAR(50),
-Gender VARCHAR(10),
-DeaprtmentID INT);
-
-INSERT INTO Student (studentID, StudentName, Gender, DepartmentID)
-VALUES (1001, 'Arun', 'Male', 101),
-(1002, 'Divya', 'Feamle', 102),
-(1003, 'Karthick', 'Male', 101);
-
-SELECT*FROM Student
+SELECT * FROM Student;
