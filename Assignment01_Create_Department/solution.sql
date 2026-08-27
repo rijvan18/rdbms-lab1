@@ -4,10 +4,11 @@
 
 -- Use Database
 
--- Create Department Table
+-- Create Department TableCREATE DATABASE CollegeDB;
+USE CollegeDB;
 
-
-create database college_db;
-use college_db;
-CREATE TABLE department (department_id INT PRIMARY KEY, department_name VARCHAR(100), HOD VARCHAR(100));
-SELECT* FROM DEPARTMENT;
+CREATE TABLE Department (
+    DepartmentID INT(5) PRIMARY KEY,
+    DepartmentName VARCHAR(20) NOT NULL,
+    HOD VARCHAR(20) NOT NULL
+);
