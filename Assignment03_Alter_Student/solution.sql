@@ -4,14 +4,8 @@
 
 -- Add PhoneNumber
 
--- Display structure
+-- Display structureALTER TABLE Student
+ADD Email VARCHAR(30) UNIQUE,
+ADD PhoneNumber BIGINT(10);
 
-USE college;
-
-ALTER TABLE student
-ADD email VARCHAR(30);
-
-ALTER TABLE student
-ADD phonemuber BIGINT;
-
-DESCRIBE student;
+DESCRIBE Student;
